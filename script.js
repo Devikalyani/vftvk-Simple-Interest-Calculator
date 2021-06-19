@@ -1,7 +1,7 @@
 function compute()
 {
     var p = document.getElementById("principal");
-    if(p.value <= 0){
+    if(p.value <= 0 || p.value == " "){
         alert("Enter a positive number");
         p.focus();
         return false;
